@@ -27,3 +27,5 @@ PokemonCard.prototype ={
 
 export default PokemonCard;
 
+export default PokemonCard;
+
