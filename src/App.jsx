@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import PokemonCard from "./components/PokemonCard"
 
 function App() {
