@@ -1,11 +1,8 @@
-import React from "react";
 import PropTypes from 'prop-types';
 
-function PokemonCard({pokemon}) {
-    
-    const { pokemon } = props;
-    const { imgSrc, name } = pokemon;
+function PokemonCard(props) {
     console.log(props);
+    const { pokemon } = props;
 
     return (
         <figure className="pokemon-card">
@@ -26,6 +23,3 @@ PokemonCard.prototype ={
     }
 
 export default PokemonCard;
-
-export default PokemonCard;
-
