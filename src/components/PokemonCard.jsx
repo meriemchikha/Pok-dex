@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-function PokemonCard({pokemon}) {
+function PokemonCard(props) {
     
     const { pokemon } = props;
     const { imgSrc, name } = pokemon;
