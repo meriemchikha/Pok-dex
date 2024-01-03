@@ -1,19 +1,16 @@
-import React from 'react';
+import "../App.css";
 
-function NavBar({ handlePreviousClick, handleNextClick }) {
-    return (
-        <div className="pokemon"> 
- 
-        
-          <button onClick={handlePreviousClick}>Précédent</button>
-       
-        
-          <button onClick={handleNextClick}>Suivant</button>
-       
-       </div>
-    );
-  }
-  
- 
+// eslint-disable-next-line react/prop-types
+function NavBar({ pokemonList, onPokemonClick }) {
+  return (
+    <nav>
+      {pokemonList.map((pokemon, index) => (
+        <button key={pokemon.id} onClick={() => onPokemonClick(index)}>
+          {pokemon.name}
+        </button>
+      ))}
+    </nav>
+  );
+}
 
-  export default NavBar;
+export default NavBar;
